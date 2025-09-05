@@ -114,8 +114,13 @@ function startGame(category) {
 	// Assign roles
 	imposterIndex = Math.floor(Math.random() * playerCount);
 	players.forEach((p, i) => p.role = i === imposterIndex ? 'imposter' : 'teammate');
-	// Choose word from selected category
-	const catWords = wordsByCategory[category] || [];
+	// Choose word from selected category or randomly from all
+	let catWords = [];
+	if (category === 'random') {
+		Object.values(wordsByCategory).forEach(arr => catWords = catWords.concat(arr));
+	} else {
+		catWords = wordsByCategory[category] || [];
+	}
 	codeWord = catWords.length > 0 ? catWords[Math.floor(Math.random() * catWords.length)] : '';
 	currentPlayer = 0;
 	enteredWords = [];

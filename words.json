@@ -1,7 +1,29 @@
 {
-  "Obst": ["Apfel", "Banane", "Birne", "Kirsche", "Traube"],
-  "Natur": ["Fluss", "Berg", "Wald", "See", "Wiese"],
-  "Technik": ["Computer", "Kamera", "Auto", "Handy", "Roboter"],
-  "Musik": ["Klavier", "Gitarre", "Trommel", "Violine", "Flöte"],
-  "Alltag": ["Buch", "Garten", "Stuhl", "Tisch", "Lampe"]
+  "Obst & Gemüse": [
+    "Apfel", "Banane", "Birne", "Kirsche", "Traube", "Orange", "Pfirsich", "Melone", "Mango", "Ananas", "Zitrone", "Limette", "Erdbeere", "Himbeere", "Brombeere", "Johannisbeere", "Kiwi", "Granatapfel", "Pflaume", "Aprikose", "Tomate", "Gurke", "Karotte", "Paprika", "Zucchini", "Aubergine", "Kohl", "Blumenkohl", "Brokkoli", "Spinat", "Salat", "Radieschen", "Sellerie", "Lauch", "Zwiebel", "Knoblauch", "Rote Bete", "Mais", "Erbse", "Bohne", "Spargel", "Fenchel", "Kürbis", "Rhabarber", "Artischocke", "Chicorée", "Endivie", "Rosenkohl", "Grünkohl", "Schalotte", "Topinambur", "Wirsing"
+  ],
+  "Tiere": [
+    "Hund", "Katze", "Maus", "Vogel", "Fisch", "Pferd", "Kuh", "Schaf", "Ziege", "Huhn", "Ente", "Gans", "Schwein", "Esel", "Kaninchen", "Hamster", "Meerschweinchen", "Papagei", "Taube", "Adler", "Falke", "Spatz", "Amsel", "Specht", "Krähe", "Rabe", "Frosch", "Kröte", "Salamander", "Eidechse", "Schlange", "Krokodil", "Alligator", "Schildkröte", "Igel", "Fuchs", "Wolf", "Bär", "Löwe", "Tiger", "Leopard", "Panther", "Affe", "Gorilla", "Orang-Utan", "Schimpanse", "Pinguin", "Robbe", "Wal", "Delfin", "Hai"
+  ],
+  "Berufe": [
+    "Arzt", "Lehrer", "Ingenieur", "Koch", "Bäcker", "Friseur", "Polizist", "Feuerwehrmann", "Soldat", "Pilot", "Mechaniker", "Elektriker", "Installateur", "Architekt", "Bauarbeiter", "Maler", "Musiker", "Sänger", "Schauspieler", "Regisseur", "Journalist", "Fotograf", "Designer", "Programmierer", "Manager", "Sekretär", "Verkäufer", "Kassierer", "Banker", "Richter", "Anwalt", "Notar", "Wissenschaftler", "Forscher", "Chemiker", "Biologe", "Physiker", "Mathematiker", "Landwirt", "Gärtner", "Tierarzt", "Zahnarzt", "Optiker", "Apotheker", "Hebamme", "Erzieher", "Pflegekraft", "Therapeut", "Psychologe", "Sozialarbeiter", "Buchhalter", "Rezeptionist"
+  ],
+  "Städte & Länder": [
+    "Berlin", "Hamburg", "München", "Köln", "Frankfurt", "Stuttgart", "Düsseldorf", "Leipzig", "Dresden", "Hannover", "Bremen", "Nürnberg", "Essen", "Dortmund", "Bonn", "Mannheim", "Augsburg", "Wiesbaden", "Münster", "Karlsruhe", "Paris", "London", "Rom", "Madrid", "Wien", "Prag", "Amsterdam", "Brüssel", "Kopenhagen", "Stockholm", "Oslo", "Helsinki", "Lissabon", "Athen", "Budapest", "Zürich", "Genf", "Bern", "Mailand", "Barcelona", "Istanbul", "Moskau", "New York", "Los Angeles", "Chicago", "Toronto", "Sydney", "Melbourne", "Tokio", "Peking", "Shanghai"
+  ],
+  "Technik & Geräte": [
+    "Computer", "Laptop", "Tablet", "Smartphone", "Fernseher", "Radio", "Kamera", "Drucker", "Scanner", "Monitor", "Maus", "Tastatur", "Lautsprecher", "Kopfhörer", "Mikrofon", "Router", "Modem", "Festplatte", "USB-Stick", "CD", "DVD", "Blu-ray", "Videorekorder", "Spielkonsole", "Joystick", "Smartwatch", "Fitnessarmband", "Wecker", "Kühlschrank", "Herd", "Backofen", "Mikrowelle", "Geschirrspüler", "Waschmaschine", "Trockner", "Staubsauger", "Bügeleisen", "Mixer", "Toaster", "Wasserkocher", "Kaffeemaschine", "Fön", "Rasierer", "Ventilator", "Klimaanlage", "Heizung", "Lichtschalter", "Steckdose", "Türklingel", "Alarmanlage"
+  ],
+  "Sportarten": [
+    "Fußball", "Basketball", "Handball", "Volleyball", "Tennis", "Tischtennis", "Badminton", "Golf", "Boxen", "Judo", "Karate", "Taekwondo", "Ringen", "Schwimmen", "Tauchen", "Surfen", "Segeln", "Rudern", "Kanu", "Skifahren", "Snowboarden", "Eislaufen", "Eishockey", "Radfahren", "Mountainbiking", "Laufen", "Joggen", "Wandern", "Klettern", "Reiten", "Skateboarden", "Rollschuhlaufen", "Motorsport", "Formel 1", "Rallye", "Turnen", "Leichtathletik", "Hürdenlauf", "Weitsprung", "Hochsprung", "Speerwurf", "Diskuswurf", "Hammerwurf", "Bogenschießen", "Schießen", "Billard", "Bowling", "Darts", "Cricket", "Rugby"
+  ],
+  "Musik & Kunst": [
+    "Klavier", "Gitarre", "Trommel", "Violine", "Flöte", "Saxophon", "Trompete", "Cello", "Bass", "Orgel", "Harfe", "Akkordeon", "Oboe", "Klarinette", "Banjo", "Mandoline", "Synthesizer", "DJ", "Dirigent", "Komponist", "Lied", "Song", "Melodie", "Rhythmus", "Noten", "Partitur", "Konzert", "Oper", "Ballett", "Theater", "Gemälde", "Skulptur", "Zeichnung", "Grafik", "Fotografie", "Film", "Regie", "Schauspiel", "Tanz", "Chor", "Orchester", "Band", "Album", "Single", "CD", "Platte", "Kassette", "Musikvideo", "Festival", "Ausstellung"
+  ],
+  "Natur & Umwelt": [
+    "Baum", "Blume", "Gras", "Busch", "Strauch", "Wald", "Feld", "Wiese", "Berg", "Tal", "Fluss", "See", "Meer", "Ozean", "Teich", "Bach", "Wasserfall", "Insel", "Küste", "Strand", "Wüste", "Steppe", "Savanne", "Dschungel", "Regenwald", "Gletscher", "Vulkan", "Höhle", "Felsen", "Stein", "Sand", "Erde", "Lehm", "Ton", "Moos", "Pilz", "Alge", "Koralle", "Muschel", "Schnecke", "Spinnennetz", "Nest", "Ast", "Zweig", "Blatt", "Wurzel", "Stamm", "Rinde", "Nadel", "Zapfen"
+  ],
+  "Alltag & Haushalt": [
+    "Buch", "Zeitung", "Zeitschrift", "Stift", "Papier", "Heft", "Block", "Tasche", "Rucksack", "Koffer", "Schlüssel", "Brille", "Uhr", "Lampe", "Kerze", "Stuhl", "Tisch", "Sofa", "Bett", "Schrank", "Regal", "Kommode", "Spiegel", "Teppich", "Vorhang", "Fenster", "Tür", "Boden", "Decke", "Wand", "Bild", "Poster", "Fernbedienung", "Kissen", "Decke", "Handtuch", "Seife", "Shampoo", "Zahnbürste", "Zahnpasta", "Kamm", "Bürste", "Föhn", "Rasierer", "Waschmittel", "Spülmittel", "Topf", "Pfanne", "Teller", "Glas", "Tasse"
+  ]
 }

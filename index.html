@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imposter Spiel</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Imposter Spiel</h1>
-    <div id="game-container">
+        <h1>Imposter Spiel</h1>
+        <div id="game-container">
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('service-worker.js');
+                });
+            }
+        </script>
         <div id="setup-phase">
             <label for="player-count">Anzahl der Spieler:</label>
             <input type="number" id="player-count" min="3" max="12" value="4">
             <div id="player-names-container"></div>
             <div id="category-phase" style="display:none;">
-                <label for="category-select">Kategorie wählen:</label>
-                <select id="category-select"></select>
-                <button id="category-confirm-btn">Kategorie bestätigen</button>
+                                <label for="category-select">Kategorie wählen:</label>
+                                <select id="category-select">
+                                    <option value="random">Zufällig (alle Kategorien)</option>
+                                </select>
+                                <button id="category-confirm-btn">Kategorie bestätigen</button>
             </div>
             <button id="start-game-btn">Spiel starten</button>
         </div>
