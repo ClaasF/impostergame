@@ -23,7 +23,7 @@
   "Natur & Umwelt": [
     "Baum", "Blume", "Gras", "Busch", "Strauch", "Wald", "Feld", "Wiese", "Berg", "Tal", "Fluss", "See", "Meer", "Ozean", "Teich", "Bach", "Wasserfall", "Insel", "Küste", "Strand", "Wüste", "Steppe", "Savanne", "Dschungel", "Regenwald", "Gletscher", "Vulkan", "Höhle", "Felsen", "Stein", "Sand", "Erde", "Lehm", "Ton", "Moos", "Pilz", "Alge", "Koralle", "Muschel", "Schnecke", "Spinnennetz", "Nest", "Ast", "Zweig", "Blatt", "Wurzel", "Stamm", "Rinde", "Nadel", "Zapfen"
   ],
-  "Alltag & Haushalt": [
-    "Buch", "Zeitung", "Zeitschrift", "Stift", "Papier", "Heft", "Block", "Tasche", "Rucksack", "Koffer", "Schlüssel", "Brille", "Uhr", "Lampe", "Kerze", "Stuhl", "Tisch", "Sofa", "Bett", "Schrank", "Regal", "Kommode", "Spiegel", "Teppich", "Vorhang", "Fenster", "Tür", "Boden", "Decke", "Wand", "Bild", "Poster", "Fernbedienung", "Kissen", "Decke", "Handtuch", "Seife", "Shampoo", "Zahnbürste", "Zahnpasta", "Kamm", "Bürste", "Föhn", "Rasierer", "Waschmittel", "Spülmittel", "Topf", "Pfanne", "Teller", "Glas", "Tasse"
+  "Allgemein (Polyseme)": [
+    "Bank", "Schloss", "Ball", "Tau", "Leiter", "Flügel", "Schimmel", "Kiefer", "Birne", "Maus", "Licht", "Arm", "Schale", "Riegel", "Stift", "Schloss", "Boden", "Decke", "Wand", "Blatt", "Ring", "Stein", "Stock", "Spitze", "Kiefer", "Schimmel", "Tau", "Flügel", "Leiter", "Ball", "Birne", "Maus", "Licht", "Arm", "Schale", "Riegel", "Stift", "Bank", "Schloss", "Boden", "Decke", "Wand", "Blatt", "Ring", "Stein", "Stock", "Spitze"
   ]
 }
