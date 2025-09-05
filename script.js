@@ -4,6 +4,16 @@ let wordsByCategory = {};
 let words = [];
 let playerCount = 4;
 let players = [];
+const playerColors = [
+	'#f4a7a1', // Soft Red
+	'#a7c6f4', // Soft Blue
+	'#a7d7a9', // Soft Green
+	'#f4e4a7', // Soft Yellow
+	'#d4b8e0', // Soft Purple
+	'#f4c5a7', // Soft Orange
+	'#a7e3e9', // Soft Turquoise
+	'#e4b8c9'  // Soft Pink
+];
 let imposterIndex = null;
 let codeWord = "";
 let currentPlayer = 0;
@@ -81,12 +91,15 @@ startGameBtn.onclick = () => {
 		alert('Mindestens 3 Spieler erforderlich.');
 		return;
 	}
-	// Get player names
+	// Get player names and assign random colors
 	const nameInputs = document.querySelectorAll('.player-name-input');
 	players = [];
+	// Shuffle colors and assign
+	const shuffledColors = playerColors.slice().sort(() => Math.random() - 0.5);
 	for (let i = 0; i < playerCount; i++) {
 		const name = nameInputs[i] ? nameInputs[i].value.trim() || `Player ${i+1}` : `Player ${i+1}`;
-		players.push({role: 'teammate', name});
+		const color = shuffledColors[i % shuffledColors.length];
+		players.push({role: 'teammate', name, color});
 	}
 	// Show category selection
 	categoryPhase.style.display = '';
@@ -143,6 +156,8 @@ function showPlayer() {
 	wordsList.style.display = 'none';
 	votePhase.style.display = 'none';
 	resultPhase.style.display = 'none';
+	// Change color scheme for current player
+	document.body.style.background = players[currentPlayer].color;
 	nextPlayerBtn.onclick = () => {
 		passPhase.style.display = 'none';
 		playerInfo.style.display = '';
@@ -158,6 +173,8 @@ function showPlayer() {
 			wordInfo.textContent = `Du bist der Impostor! Versuche, dich unauffällig zu verhalten.`;
 		}
 		relatedWordInput.value = '';
+		// Update color scheme for current player with solid color
+		document.body.style.background = players[currentPlayer].color;
 	};
 }
 
@@ -193,6 +210,8 @@ function setupVoting() {
 	function updateVotingPlayer() {
 		votingPlayerInfo.textContent = `Jetzt stimmt ab: ${players[votingIndex].name}`;
 		voteSelect.selectedIndex = 0;
+	// Update color scheme for voting player
+	document.body.style.background = players[votingIndex].color;
 	}
 	for (let i = 0; i < playerCount; i++) {
 		const opt = document.createElement('option');
@@ -208,6 +227,8 @@ function setupVoting() {
 		if (votes.length < playerCount) {
 			updateVotingPlayer();
 		} else {
+			// Reset color scheme after voting
+			document.body.style.background = '#e3f2fd';
 			showResult();
 		}
 	};
@@ -217,6 +238,8 @@ function setupVoting() {
 function showResult() {
 	votePhase.style.display = 'none';
 	resultPhase.style.display = '';
+	// Reset color scheme after voting
+	document.body.style.background = '#e3f2fd';
 	// Tally votes
 	const tally = Array(playerCount).fill(0);
 	votes.forEach(v => tally[v]++);
