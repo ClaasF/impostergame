@@ -1,0 +1,7 @@
+{
+  "Obst": ["Apfel", "Banane", "Birne", "Kirsche", "Traube"],
+  "Natur": ["Fluss", "Berg", "Wald", "See", "Wiese"],
+  "Technik": ["Computer", "Kamera", "Auto", "Handy", "Roboter"],
+  "Musik": ["Klavier", "Gitarre", "Trommel", "Violine", "Flöte"],
+  "Alltag": ["Buch", "Garten", "Stuhl", "Tisch", "Lampe"]
+}

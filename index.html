@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposter Spiel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imposter Spiel</h1>
+    <div id="game-container">
+        <div id="setup-phase">
+            <label for="player-count">Anzahl der Spieler:</label>
+            <input type="number" id="player-count" min="3" max="12" value="4">
+            <div id="player-names-container"></div>
+            <div id="category-phase" style="display:none;">
+                <label for="category-select">Kategorie wählen:</label>
+                <select id="category-select"></select>
+                <button id="category-confirm-btn">Kategorie bestätigen</button>
+            </div>
+            <button id="start-game-btn">Spiel starten</button>
+        </div>
+        <div id="game-phase" style="display:none;">
+            <div id="pass-phase" style="display:none;">
+                <h2>Gib das Gerät an den nächsten Spieler weiter</h2>
+                <p>Stelle sicher, dass der vorherige Spieler deinen Bildschirm nicht sieht!</p>
+                <button id="next-player-btn">Ich bin bereit</button>
+            </div>
+            <div id="player-info"></div>
+            <div id="word-info"></div>
+            <div id="input-phase" style="display:none;">
+                <label for="related-word">Gib ein Wort ein, das mit dem Codewort zu tun hat:</label>
+                <input type="text" id="related-word">
+                <button id="submit-word-btn">Absenden</button>
+            </div>
+            <div id="words-list" style="display:none;"></div>
+            <div id="vote-phase" style="display:none;">
+                <div id="voting-player-info" style="font-weight:bold; color:#1976d2; margin-bottom:10px;"></div>
+                <label for="vote-select">Stimme ab, wer der Impostor ist:</label>
+                <select id="vote-select"></select>
+                <button id="submit-vote-btn">Abstimmen</button>
+            </div>
+            <div id="result-phase" style="display:none;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
