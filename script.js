@@ -5,14 +5,14 @@ let words = [];
 let playerCount = 4;
 let players = [];
 const playerColors = [
-	'#f4a7a1', // Soft Red
-	'#a7c6f4', // Soft Blue
-	'#a7d7a9', // Soft Green
-	'#f4e4a7', // Soft Yellow
-	'#d4b8e0', // Soft Purple
-	'#f4c5a7', // Soft Orange
-	'#a7e3e9', // Soft Turquoise
-	'#e4b8c9'  // Soft Pink
+	'#94a7bc', // Blue Grey
+	'#bc94a7', // Rose Grey
+	'#a7bc94', // Sage Grey
+	'#bcb794', // Warm Grey
+	'#9f94bc', // Lavender Grey
+	'#bc9f94', // Terra Grey
+	'#94bcb7', // Ocean Grey
+	'#bc94b7'  // Mauve Grey
 ];
 let imposterIndex = null;
 let codeWord = "";
